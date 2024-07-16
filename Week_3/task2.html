@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pet Age Calculator</title>
+</head>
+<body>
+  <h1>The Pet Age Calculator</h1>
+  <h3>Want to know your Pet's Age in human years? </h3><p>Here we Go!!!</p>
+  <script>
+    function calculatePetAge(petAge, conversionRate = 7) { 
+      const petYears = petAge * conversionRate;
+      let petType = "cat"; 
+
+     
+      if (conversionRate !== 7) {
+        petType = conversionRate === 5 ? "dog" : "other"; 
+      }
+
+      console.log(`Your ${petType} is ${petAge} years old in ${petType} years!`);
+    }
+
+    
+    calculatePetAge(3); 
+    calculatePetAge(5, 5); 
+    calculatePetAge(2, 12); 
+  </script>
+</body>
+</html>

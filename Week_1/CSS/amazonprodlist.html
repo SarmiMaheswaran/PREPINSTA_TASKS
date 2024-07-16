@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product listing page</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    
+    header {
+        background-color: #232f3e;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .container {
+        display: flex;
+        margin: 20px;
+    }
+    
+    .filters {
+        width: 20%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .filters h2, .filters h3 {
+        margin: 0 0 10px;
+    }
+    
+    .filter-group {
+        margin-bottom: 20px;
+    }
+    
+    .filter-group ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .filter-group li {
+        margin: 10px 0;
+    }
+    
+    .product-listing {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .product-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .product-card h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    
+    .product-card .price {
+        font-size: 16px;
+        color: #b12704;
+        margin: 10px 0;
+    }
+    
+    .product-card .description {
+        font-size: 14px;
+        color: #555;
+        margin: 10px 0;
+    }
+    
+    .product-card button {
+        padding: 10px 20px;
+        background-color: #232f3e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .product-card button:hover {
+        background-color: #3e4c61;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Amazon</h1>
+    </header>
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Category</h3>
+                <ul>
+                    <li><input type="checkbox" id="Mobiles"><label for=" Mobiles"> Mobiles</label></li>
+                    <li><input type="checkbox" id="laptops"><label for="laptops"> Laptops</label></li>
+                    <li><input type="checkbox" id="headphones"><label for="headphones">Headphones</label></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <ul>
+                    <li><input type="checkbox" id="under25"><label for="under25"> Under ₹25000</label></li>
+                    <li><input type="checkbox" id="25to50"><label for="25to50"> ₹25000 to ₹50000</label></li>
+                    <li><input type="checkbox" id="50to100"><label for="50to100"> ₹50000 to ₹100000</label></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="product-listing">
+            <div class="product-card">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Samsung/Tiles/16thMarch/Galaxy_A35_580x800.jpeg" alt="Product Image">
+                <h3>Samsung Galaxy A35 5G (Awesome Lilac, 8GB RAM, 128GB Storage) | Premium Glass Back | 50 MP Main Camera (OIS) | Nightography | IP67 | Corning Gorilla Glass Victus+ | sAMOLED with Vision Booster</h3>
+                <p class="price"> ₹30,999</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51MKRHXe65L._AC_UY327_FMwebp_QL65_.jpg" alt="Product Image">
+                <h3>soundcore by Anker H30i Wireless On-Ear Headphones, Foldable Design, Pure Bass, 70H Playtime, Bluetooth 5.3</h3>
+                <p class="price"> ₹2,799</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/BAU/OPPO/F27Pro/Buynow/Galaxy_A35_580x800.jpeg" alt="Product Image">
+                <h3>Oppo F25 Pro 5G (Lava Red, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</h3>
+                <p class="price"> ₹23,999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div>
+            <div class="product-card">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/iQOOz9lite/NewGWz9lite/Galaxy_M34_4.png" alt="">
+            <h3>HONOR X9b 5G (Midnight Black, 8GB + 256GB) | India's First Ultra-Bounce Anti-Drop Curved AMOLED Display | 5800mAh Battery | 108MP Primary Camera | without Charger</h3>
+            <p class="price"> ₹25,998</p>
+            <button>Add to Cart</button>
+           </div>        
+        </main>
+    </div>
+</body>
+</html>

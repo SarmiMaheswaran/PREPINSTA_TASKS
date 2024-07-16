@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsingdot</title>
+    <style>
+    .pulse {
+    position:relative;
+    margin: 100px auto 50px auto;
+    width:110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.pulse div {
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background: black;
+    float:left;
+    margin:0 3px;
+    background:#6859a3;
+    transform:scale(0);
+    animation: grow 4.4s infinite ease-in-out;
+    animation: grow 4.4s infinite ease-in-out;
+
+}
+.pulse .ball1 {
+    z-index:1;
+}
+.pulse .ball2 {
+    animation-delay: 0.3s;
+}
+.pulse .ball3 {
+    animation-delay: 0.6s;
+}
+.pulse .ball4 {
+    animation-delay: 0.9s;
+}
+
+@keyframes grow {
+    0% {transform: scale(0);}
+    25% {transform: scale(1);}
+    50% {transform: scale(0);}
+    75% {transform: scale(1);background:#72c2c2;}
+    100% {transform: scale(0);background:#72c2c2;}
+}
+    </style>
+</head>
+<body>
+    <div class="pulse">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+    </div>
+</body>
+</html>

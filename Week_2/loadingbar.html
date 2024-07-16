@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .loading-bar-container {
+            width: 200px;
+            background-color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        .loading-bar {
+            height: 15px;
+            width: 15px;
+            background-color: #3498db;
+            animation: load 3s linear infinite;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0%;
+            }
+            25%{
+                width: 25%;
+            }
+            50% {
+                width: 50%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+</body>
+</html>

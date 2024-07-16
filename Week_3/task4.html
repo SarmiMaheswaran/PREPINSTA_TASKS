@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coffee Consumption Estimator</title>
+</head>
+<body>
+  <h1>The Coffee Consumption Estimator</h1>
+  <p>Are you curious about how much coffee you'll need?</p>
+  <script>
+    function calculateCoffeeSupply(age, cupsPerDay) {
+      const maxAge = 80; 
+      const yearsLeft = maxAge - age;
+      const totalCups = Math.round(yearsLeft * cupsPerDay); 
+
+      console.log(`You will need ${totalCups} cups of coffee to keep you awake until the age of ${maxAge}.`);
+    }
+
+    
+    calculateCoffeeSupply(25, 2.5); 
+    calculateCoffeeSupply(30, 1.8); 
+    calculateCoffeeSupply(40, 3); 
+  </script>
+</body>
+</html>
